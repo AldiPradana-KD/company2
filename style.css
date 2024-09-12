@@ -1,0 +1,540 @@
+/* Apply background image to body */
+body {
+  background-image: url('assets/bg2.jpg'); /* Ganti dengan path gambar Anda */
+  background-size: cover; /* Menutupi seluruh area */
+  background-position: center; /* Pusatkan gambar */
+  background-attachment: fixed; /* Gambar tetap saat scroll */
+  background-repeat: no-repeat; /* Hindari pengulangan gambar */
+  margin: 0; /* Hapus margin default */
+  font-family: Arial, sans-serif; /* Pilih font default */
+}
+
+h2 {
+  color: #F1E6D2;
+}
+
+h1 {
+  color: #F1E6D2;
+}
+
+p {
+  color: #F1E6D2;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.logo {
+  height: 40px;
+  /* Adjust logo height */
+  width: 40px;
+  /* Set the width equal to height to maintain aspect ratio */
+  border-radius: 50%;
+  /* Makes the image round */
+  object-fit: cover;
+  /* Ensures the image covers the container without stretching */
+  margin-right: 15px;
+}
+.navbar-brand h1 {
+  font: bold 20px/30px Arial, sans-serif;
+}
+
+#navbar {
+  font-family:Arial, Helvetica, sans-serif;
+  background: #67191f;
+  color: #F1E6D2;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  transition: top 0.3s;
+  position: relative;
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  margin-right: auto;
+}
+
+.logo {
+  height: 40px;
+  /* Adjust logo height */
+  margin-right: 15px;
+}
+
+.company-name {
+  font-size: 24px;
+  margin: 0;
+}
+
+.hamburger {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  flex-direction: column;
+  align-items: center;
+  margin-left: auto;
+}
+
+.hamburger .bar {
+  width: 25px;
+  height: 3px;
+  background: #F1E6D2;
+  margin: 3px 0;
+  transition: 0.3s;
+}
+
+#navbar-menu {
+  list-style: none;
+  margin: 0;
+  padding: 10px;
+  display: flex;
+}
+
+#navbar-menu li {
+  margin: 0 15px;
+}
+
+#navbar-menu a {
+  color: #F1E6D2;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  #navbar-menu {
+    border-radius: 9px;
+    display: none;
+    position: absolute;
+    top: 40px;
+    /* Adjust based on your navbar height */
+    right: 20px;
+    background: #67191f;
+    flex-direction: column;
+    width: 200px;
+    /* Adjust as needed */
+  }
+
+  #navbar-menu.active {
+    display: flex;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+}
+/*CONTENT*/
+.content h1 {
+  font: bold 20px/30px Arial, sans-serif;
+}
+.content {
+  height: 100vh;
+  /* Memastikan section memenuhi tinggi viewport */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  text-align: center;
+  box-sizing: border-box;
+  /* Memastikan padding tidak menambah ukuran elemen */
+}
+
+h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 1.2em;
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2em;
+  }
+
+  p {
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.5em;
+  }
+
+  p {
+    font-size: 0.9em;
+  }
+}
+
+/*BATAS*/
+/* CSS for About Us Section */
+.about-section {
+  background-color: #F1E6D2;
+  padding: 3rem 0;
+}
+
+.about-section .box-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.about-section .content-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.about-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+.about-section p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  margin-bottom: 2rem;
+  color: #ab3130;
+}
+
+.about-section .image-box {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+}
+
+.about-section .image-box img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .about-section .content-box {
+      text-align: left;
+  }
+
+  .about-section h2 {
+    color: #ab3130;
+      font-size: 2rem;
+  }
+
+  .about-section p {
+      font-size: 1rem;
+  }
+
+  .about-section .image-box {
+      padding: 0.5rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .about-section h2 {
+      font-size: 1.8rem;
+  }
+
+  .about-section p {
+      font-size: 0.9rem;
+  }
+
+  .about-section .image-box {
+      margin-top: 1rem;
+  }
+}
+
+/*BATAS*/
+  .services-section {
+    background-color: #F1E6D2; /* Latar belakang hitam untuk seluruh section */
+    color: white; /* Warna teks putih untuk kontras */
+  }
+
+  .service-box {
+    background-color: #FFFFFF; /* Latar belakang merah untuk box */
+    color: #ab3130; /* Warna teks putih untuk kontras */
+    padding: 20px; /* Padding untuk memperindah tampilan */
+    border-radius: 8px; /* Sudut box melengkung */
+  }
+
+  .service-box i {
+    font-size: 40px; /* Ukuran ikon */
+    margin-bottom: 10px; /* Jarak antara ikon dan teks */
+  }
+
+  .service-box h5 {
+    margin: 10px 0; /* Jarak atas dan bawah judul */
+  }
+
+  .service-box p {
+    color: #ab3130;
+  }
+/*BATAS*/
+.technologies-section {
+  background-color: #F1E6D2;
+  padding: 2rem 0;
+}
+
+.tech-item {
+  background-color: #FFFFFF;
+  border-radius: 8px;
+  padding: 1rem;
+  display: inline-block;
+  width: 100%;
+  max-width: 150px; /* Sesuaikan ukuran box di sini */
+}
+
+.tech-img {
+  width: 100%; /* Mengatur gambar untuk memenuhi box */
+  height: auto; /* Memastikan rasio gambar tetap */
+}
+
+.tech-label {
+  color: #ab3130;
+  margin-top: 0.5rem;
+}
+
+.tech-item h5 {
+  font: bold 16px/24px "Roboto", sans-serif;
+  font-family:Arial, Helvetica, sans-serif;
+}
+.technologies-section h2 {
+  color: #ab3130;
+  font: bold 24px/32px "Roboto", sans-serif;
+}
+
+/*Proses*/
+.process-section {
+  background-color: #F1E6D2; /* Latar belakang hitam untuk section */
+  padding: 2rem 0;
+}
+
+.process-list {
+  list-style: none;
+  padding: 10px;
+  margin: 20px auto;
+}
+
+.process-item {
+  background-color: rgb(255, 255, 255); /* Box merah */
+  border-radius: 8px;
+  padding: 2rem;
+  padding-bottom: 3rem;
+  margin-bottom: 2rem; /* Spasi antara item */
+  box-sizing: border-box;
+}
+
+.process-item h4 {
+  font: bold 24px/32px "Roboto", sans-serif;
+  color: #ab3130; /* Warna teks header */
+  margin-top: 0;
+}
+
+.process-item p {
+  color: #ab3130; /* Warna teks paragraf */
+}
+
+.container {
+  max-width: 1200px; /* Atur lebar maksimum container */
+}
+
+/*Portofolio*/
+.portfolio-section {
+  background-color: #F1E6D2; /* Latar belakang hitam untuk section */
+  padding: 2rem 0;
+}
+
+.portfolio-item {
+  background-color: #ffffff; /* Box merah */
+  border-radius: 8px;
+  padding: 1rem;
+  color: #ab3130; /* Warna teks putih */
+}
+
+.portfolio-item img {
+  max-width: 100%; /* Sesuaikan gambar dengan lebar box */
+  height: auto; /* Memastikan rasio gambar tetap */
+  border-radius: 8px; /* Sesuaikan sudut gambar dengan box */
+}
+
+.portfolio-item h4,h2 {
+  font: bold 24px/32px "Roboto", sans-serif;
+  color: #ab3130; /* Warna teks header */
+  margin-top: 0;
+}
+
+.portfolio-item p {
+  color: #ab3130;
+  margin: 0.5rem 0;
+}
+
+.container {
+  max-width: 1200px; /* Atur lebar maksimum container */
+}
+
+.text-center {
+  text-align: center;
+}
+
+.mb-5 {
+  margin-bottom: 3rem;
+}
+
+.mb-4 {
+  margin-bottom: 1.5rem;
+}
+
+.p-3 {
+  padding: 1rem;
+}
+
+/*client*/
+blockquote p {
+  color: #ab3130;
+}
+.testimonials-section {
+  background-color: #F1E6D2; /* Latar belakang hitam untuk section */
+  padding: 2rem 0;
+}
+
+.testimonial-card {
+  background-color: rgb(255, 255, 255); /* Box merah */
+  border-radius: 8px;
+  padding: 1rem;
+  color: #ab3130; /* Warna teks putih */
+}
+
+.testimonial-card blockquote {
+  margin-bottom: 1rem; /* Jarak bawah blockquote */
+}
+
+.testimonial-card footer {
+  color: #ab3130; /* Warna teks footer */
+}
+
+.container {
+  max-width: 1200px; /* Atur lebar maksimum container */
+}
+
+.text-center {
+  text-align: center;
+}
+
+.mb-5 {
+  margin-bottom: 3rem;
+}
+
+.mb-4 {
+  margin-bottom: 1.5rem;
+}
+
+.p-4 {
+  padding: 1.5rem; /* Padding yang lebih besar untuk card */
+}
+
+/*PARTNER*/
+/* Styling untuk latar belakang section */
+.clients-section {
+  background-color: #F1E6D2; /* Warna latar belakang section */
+  padding-top: 5rem; /* Spasi atas untuk section */
+  padding-bottom: 5rem; /* Spasi bawah untuk section */
+}
+
+/* Media Query untuk layar kecil */
+@media (max-width: 576px) {
+  .partner-card {
+      padding: 15px; /* Mengurangi padding pada kartu untuk layar kecil */
+  }
+
+  .partner-card img {
+      max-width: 40%; /* Menyesuaikan lebar gambar pada layar kecil */
+  }
+}
+
+/*contact*/
+.contact-section {
+  background-color: #F1E6D2; /* Light background for the contact section */
+  color: #ab3130; /* Dark text color for readability */
+}
+
+.contact-section h2 {
+  font-size: 2rem;
+  color: #ab3130; /* Primary color for the heading */
+}
+
+.contact-section .form-control {
+  border-radius: 0.25rem; /* Rounded corners for form inputs */
+  border: 1px solid #ced4da; /* Border color for form inputs */
+}
+
+.contact-section .form-control:focus {
+  border-color: #67191f; /* Border color on focus */
+  box-shadow: 0 0 0 0.2rem #ab3130; /* Shadow effect on focus */
+}
+
+.contact-section .glow-button {
+  background-color: #ab3130; /* Button background color */
+  border: none; /* Remove default border */
+  box-shadow: 0 0 10px #ab3130; /* Glow effect */
+  transition: background-color 0.3s, box-shadow 0.3s; /* Smooth transition */
+}
+
+.contact-section .glow-button:hover {
+  background-color: #67191f; /* Darker background on hover */
+  box-shadow: 0 0 15px #df6363; /* Stronger glow effect */
+}
+
+/* Footer Styles */
+.footer-section {
+  background-color: #67191f; /* Dark background for the footer */
+  color: #ffffff; /* White text color */
+}
+
+.footer-section a {
+  color: #F1E6D2; /* White color for links */
+  text-decoration: none; /* Remove underline */
+}
+
+.footer-section a:hover {
+  text-decoration: underline; /* Underline on hover */
+}
+
+.footer-section .social-links a {
+  font-size: 1.5rem; /* Larger icons */
+}
+
+.footer-section .social-links a:hover {
+  color: #007bff; /* Change icon color on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .contact-section .form-control {
+      font-size: 0.875rem; /* Smaller text size on small screens */
+  }
+
+  .footer-section .social-links a {
+      font-size: 1.25rem; /* Slightly smaller icons on small screens */
+    }
+}
+.footer-section p {
+  color: #F1E6D2;
+}
