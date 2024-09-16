@@ -42,6 +42,22 @@ document.addEventListener('scroll', function() {
 });
 
 /*BATAS*/
+let lastScrollTop = 0;
+const navbar = document.getElementById('navbar');
+
+window.addEventListener('scroll', () => {
+  const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+  if (scrollTop > lastScrollTop) {
+    navbar.classList.add('scroll-down');
+    navbar.classList.remove('scroll-up');
+  } else {
+    navbar.classList.add('scroll-up');
+    navbar.classList.remove('scroll-down');
+  }
+
+  lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
+});
 /*BATAS*/
 /*BATAS*/
-/*BATAS*/
+/*BATAS*/   
