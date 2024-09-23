@@ -29,96 +29,52 @@ header {
 }
 /*batas*/
 .navbar {
-  background-color: #67191f; /* Latar belakang navbar */
-  padding: 10px 0; /* Padding untuk navbar */
-  position: fixed; /* Posisi tetap di atas */
-  top: 0;
-  width: 100%;
-  z-index: 1000; /* Pastikan tetap di atas konten lain */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Tambahkan bayangan */
+  background-color: #67191f;
+  color: white;
+  padding: 15px 0;
+  position: fixed; /* Menjadikan navbar tetap terlihat saat scroll */
+  width: 100%; /* Membuat navbar lebar penuh */
+  top: 0; /* Menempatkan navbar di bagian atas */
+  z-index: 1000; /* Memastikan navbar berada di atas konten lain */
 }
 
-.navbar .container {
-  max-width: 1200px; /* Lebar maksimum container */
-  margin: 0 auto;
-  padding: 0 15px;
+.container {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
-.navbar-brand {
-  color: #F1E6D2; /* Warna terang untuk nama merek */
-  font-size: 1.8rem; /* Ukuran font */
-  text-decoration: none; /* Hilangkan garis bawah */
-  font-weight: bold; /* Tebalkan nama merek */
+.logo {
+  color: white;
+  text-decoration: none;
+  font-size: 24px;
 }
 
-.navbar-nav {
-  list-style: none; /* Hilangkan bullet points */
-  margin: 0;
-  padding: 0;
-  display: flex; /* Atur item secara horizontal */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
 }
 
-.nav-item {
-  margin-left: 20px; /* Jarak antar item nav */
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  padding: 8px 15px;
+  transition: background 0.3s;
 }
 
-.nav-link {
-  color: #F1E6D2; /* Warna terang untuk tautan */
-  text-decoration: none; /* Hilangkan garis bawah */
-  font-size: 1rem; /* Ukuran font */
-  transition: color 0.3s; /* Transisi warna */
+.nav-links a:hover {
+  background-color: #555;
+  border-radius: 5px;
 }
 
-.nav-link:hover {
-  color: #ab3130; /* Warna saat hover */
+.content {
+  margin-top: 70px; /* Menambahkan margin untuk menghindari konten tertutup navbar */
+  padding: 20px;
 }
-
-/* Gaya untuk tombol toggle */
-.nav-toggle {
-  display: none; /* Sembunyikan tombol toggle pada layar besar */
-  background: none;
-  border: none;
-  color: #F1E6D2; /* Warna ikon terang */
-  font-size: 1.5rem;
-  cursor: pointer;
-}
-
-/* Responsif */
-@media (max-width: 768px) {
-  .navbar-nav {
-    flex-direction: column; /* Susun item secara vertikal */
-    display: none; /* Sembunyikan item nav pada layar kecil */
-    width: 100%; /* Lebar penuh */
-    background-color: #67191f; /* Latar belakang navbar saat mobile */
-    position: absolute; /* Posisi absolute untuk menumpuk di bawah navbar */
-    top: 60px; /* Jarak dari atas */
-    left: 0;
-    padding: 10px 0; /* Padding untuk navbar saat mobile */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Bayangan untuk efek dropdown */
-  }
-
-  .navbar-nav.active {
-    display: flex; /* Tampilkan item nav saat aktif */
-  }
-
-  .nav-item {
-    margin: 0; /* Hilangkan margin untuk item saat ditumpuk */
-    border-bottom: 1px solid #F1E6D2; /* Garis bawah item */
-  }
-
-  .nav-item:last-child {
-    border-bottom: none; /* Hilangkan garis bawah pada item terakhir */
-  }
-
-  .nav-toggle {
-    display: block; /* Tampilkan tombol toggle pada layar kecil */
-    margin-left: auto; /* Posisikan tombol toggle di sebelah kanan */
-  }
-}
-
 /*Batas*/
 .content h1 {
   font: bold 20px/30px Arial, sans-serif;
@@ -345,6 +301,8 @@ p {
 .container {
   max-width: 1200px; /* Atur lebar maksimum container */
 }
+
+.services-section h2 {}
 
 /*Portofolio*/
 .portfolio-section {
