@@ -28,53 +28,7 @@ header {
   z-index: 1000;
 }
 /*batas*/
-.navbar {
-  background-color: #67191f;
-  color: white;
-  padding: 15px 0;
-  position: fixed; /* Menjadikan navbar tetap terlihat saat scroll */
-  width: 100%; /* Membuat navbar lebar penuh */
-  top: 0; /* Menempatkan navbar di bagian atas */
-  z-index: 1000; /* Memastikan navbar berada di atas konten lain */
-}
 
-.container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
-}
-
-.logo {
-  color: white;
-  text-decoration: none;
-  font-size: 24px;
-}
-
-.nav-links {
-  list-style: none;
-  display: flex;
-  gap: 20px;
-}
-
-.nav-links a {
-  color: white;
-  text-decoration: none;
-  padding: 8px 15px;
-  transition: background 0.3s;
-}
-
-.nav-links a:hover {
-  background-color: #555;
-  border-radius: 5px;
-}
-
-.content {
-  margin-top: 70px; /* Menambahkan margin untuk menghindari konten tertutup navbar */
-  padding: 20px;
-}
 /*Batas*/
 .content h1 {
   font: bold 20px/30px Arial, sans-serif;
@@ -301,8 +255,6 @@ p {
 .container {
   max-width: 1200px; /* Atur lebar maksimum container */
 }
-
-.services-section h2 {}
 
 /*Portofolio*/
 .portfolio-section {
